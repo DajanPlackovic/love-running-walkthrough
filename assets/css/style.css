@@ -171,6 +171,28 @@ main {
   color: #3a3a3a;
 }
 
+#times {
+  background: url('../images/dublin-city.webp') no-repeat center center/cover;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#times > div {
+  color: #fafafa;
+  background-color: rgb(0, 0, 0, 0.6);
+  padding: 15px;
+  text-align: center;
+  /* This way, no wrapping when screen smaller than 400px */
+  flex-basis: 200px;
+  flex-grow: 1;
+  /* Creates a grid of meetup time divs over the background image */
+  border: 2px solid white;
+}
+
+#times h3 {
+  color: inherit;
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
   /* Header  */
